@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="Welcome to yuwen pan’s blog! Here, I’m glad to share my ideas about life, study, and work, as well as my codes.  Tutorial to deploy hexo to github pagein an easy way">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="Welcome to yuwen pan’s blog! Here, I’m glad to share my ideas about life, study, and work, as well as my codes.  Tutorial to deploy hexo to github pagein an easy way">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-01T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-08-02T16:08:56.168Z">
+<meta property="article:modified_time" content="2020-08-02T16:53:00.360Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="hexo">
@@ -184,7 +184,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-03 00:08:56" itemprop="dateModified" datetime="2020-08-03T00:08:56+08:00">2020-08-03</time>
+                <time title="Modified: 2020-08-03 00:53:00" itemprop="dateModified" datetime="2020-08-03T00:53:00+08:00">2020-08-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -218,28 +218,28 @@
 <h2 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h2><p>in an easy way</p>
 <a id="more"></a>
 
-<h3 id="1-Install-node"><a href="#1-Install-node" class="headerlink" title="1. Install node"></a>1. Install node</h3><pre><code>Download nodejs from https://nodejs.org/zh-cn/download/
+<h3 id="Install-node"><a href="#Install-node" class="headerlink" title="Install node"></a>Install node</h3><pre><code>Download nodejs from https://nodejs.org/zh-cn/download/
 Install</code></pre>
-<h3 id="2-Install-Hexo"><a href="#2-Install-Hexo" class="headerlink" title="2. Install Hexo"></a>2. Install Hexo</h3><pre><code>$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
+<h3 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h3><pre><code>$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 $ cnpm install hexo-cli -g</code></pre>
-<h3 id="3-Initiation"><a href="#3-Initiation" class="headerlink" title="3. Initiation"></a>3. Initiation</h3><pre><code>$ hexo init panyuwen.github.io ## same username as guthub</code></pre>
-<h3 id="4-Install"><a href="#4-Install" class="headerlink" title="4. Install"></a>4. Install</h3><pre><code>$ cd panyuwen.github.io
+<h3 id="Initiation"><a href="#Initiation" class="headerlink" title="Initiation"></a>Initiation</h3><pre><code>$ hexo init panyuwen.github.io ## same username as guthub</code></pre>
+<h3 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h3><pre><code>$ cd panyuwen.github.io
 $ cnpm install</code></pre>
-<h3 id="5-Run"><a href="#5-Run" class="headerlink" title="5. Run"></a>5. Run</h3><pre><code>$ hexo clean ## clean cache
+<h3 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h3><pre><code>$ hexo clean ## clean cache
 $ hexo g  ## generate static page
 $ hexo s  ## run on server</code></pre>
-<h3 id="6-Open-in-browser"><a href="#6-Open-in-browser" class="headerlink" title="6. Open in browser"></a>6. Open in browser</h3><pre><code>Direct to localhost:4000</code></pre>
-<h3 id="7-Modify-configuration-file"><a href="#7-Modify-configuration-file" class="headerlink" title="7. Modify configuration file"></a>7. Modify configuration file</h3><pre><code>Open _config.yml</code></pre>
-<h3 id="8-Change-the-Hexo-theme"><a href="#8-Change-the-Hexo-theme" class="headerlink" title="8. Change the Hexo theme"></a>8. Change the Hexo theme</h3><pre><code>$ git clone https://github.com/theme-next/hexo-theme-next themes/next
+<h3 id="Open-in-browser"><a href="#Open-in-browser" class="headerlink" title="Open in browser"></a>Open in browser</h3><pre><code>Direct to localhost:4000</code></pre>
+<h3 id="Modify-configuration-file"><a href="#Modify-configuration-file" class="headerlink" title="Modify configuration file"></a>Modify configuration file</h3><pre><code>Open _config.yml</code></pre>
+<h3 id="Change-the-Hexo-theme"><a href="#Change-the-Hexo-theme" class="headerlink" title="Change the Hexo theme"></a>Change the Hexo theme</h3><pre><code>$ git clone https://github.com/theme-next/hexo-theme-next themes/next
 
 Then modify _config.yml
     theme: next</code></pre>
-<h3 id="9-Re-run"><a href="#9-Re-run" class="headerlink" title="9. Re-run"></a>9. Re-run</h3><pre><code>$ hexo g
+<h3 id="Re-run"><a href="#Re-run" class="headerlink" title="Re-run"></a>Re-run</h3><pre><code>$ hexo g
 $ hexo s</code></pre>
-<h3 id="10-Write-an-article"><a href="#10-Write-an-article" class="headerlink" title="10. Write an article"></a>10. Write an article</h3><pre><code>$ hexo new ArticleName
+<h3 id="Write-an-article"><a href="#Write-an-article" class="headerlink" title="Write an article"></a>Write an article</h3><pre><code>$ hexo new ArticleName
 
 Then open source/_posts/ArticleName.md and write</code></pre>
-<h3 id="11-Tags-for-article"><a href="#11-Tags-for-article" class="headerlink" title="11. Tags for article"></a>11. Tags for article</h3><pre><code>$ hexo new page tags  ## to start the function
+<h3 id="Tags-for-article"><a href="#Tags-for-article" class="headerlink" title="Tags for article"></a>Tags for article</h3><pre><code>$ hexo new page tags  ## to start the function
 
 Modify _config.yml
     tag_dir: tags
@@ -250,7 +250,7 @@ Modify source/tags/index.md
     type: &quot;tags&quot;
     comments: false
     ---</code></pre>
-<h3 id="12-Categories-for-article"><a href="#12-Categories-for-article" class="headerlink" title="12. Categories for article"></a>12. Categories for article</h3><pre><code>$ hexo new page categories
+<h3 id="Categories-for-article"><a href="#Categories-for-article" class="headerlink" title="Categories for article"></a>Categories for article</h3><pre><code>$ hexo new page categories
 
 Modify _config.yml
     category_dir: categories
@@ -271,8 +271,8 @@ Put categories &amp; tags in the article
     - tag1
     - tag2
     ---</code></pre>
-<h3 id="13-Comments"><a href="#13-Comments" class="headerlink" title="13. Comments"></a>13. Comments</h3><pre><code>Have not realized yet</code></pre>
-<h3 id="14-Deploy-to-Github"><a href="#14-Deploy-to-Github" class="headerlink" title="14. Deploy to Github"></a>14. Deploy to Github</h3><pre><code>Start a new public repository, named panyuwen.github.io
+<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><pre><code>Have not realized yet</code></pre>
+<h3 id="Deploy-to-Github"><a href="#Deploy-to-Github" class="headerlink" title="Deploy to Github"></a>Deploy to Github</h3><pre><code>Start a new public repository, named panyuwen.github.io
 
 Install hexo-deployer-git
 $ cnpm install hexo-deployer-git --save
@@ -284,8 +284,8 @@ deploy:
   branch: master
 
 $ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, try again</code></pre>
-<h3 id="15-Open-in-browser"><a href="#15-Open-in-browser" class="headerlink" title="15. Open in browser"></a>15. Open in browser</h3><pre><code>Direct to https://panyuwen.github.io/</code></pre>
-<h3 id="16-Create-modify-and-delete-articles"><a href="#16-Create-modify-and-delete-articles" class="headerlink" title="16. Create, modify, and delete articles"></a>16. Create, modify, and delete articles</h3><pre><code>$ hexo new ArticleName
+<h3 id="Open-in-browser-1"><a href="#Open-in-browser-1" class="headerlink" title="Open in browser"></a>Open in browser</h3><pre><code>Direct to https://panyuwen.github.io/</code></pre>
+<h3 id="Create-modify-and-delete-articles"><a href="#Create-modify-and-delete-articles" class="headerlink" title="Create, modify, and delete articles"></a>Create, modify, and delete articles</h3><pre><code>$ hexo new ArticleName
 $ vim source/_posts/ArticleName.md
 $ rm source/_posts/ArticleName.md
 $ hexo clean; hexo g; hexo d</code></pre>
@@ -295,6 +295,26 @@ $ hexo clean; hexo g; hexo d</code></pre>
     
     
     
+        <div class="reward-container">
+  <div>Peace & Love.</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechat.JPG" alt="yuwen pan WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.JPG" alt="yuwen pan Alipay">
+        <p>Alipay</p>
+      </div>
+
+  </div>
+</div>
+
         
 
 <div>
@@ -380,7 +400,7 @@ $ hexo clean; hexo g; hexo d</code></pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tutorial-to-deploy-hexo-to-github-page"><span class="nav-number">1.</span> <span class="nav-text">Tutorial to deploy hexo to github page</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-node"><span class="nav-number">1.1.</span> <span class="nav-text">1. Install node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">2. Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Initiation"><span class="nav-number">1.3.</span> <span class="nav-text">3. Initiation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Install"><span class="nav-number">1.4.</span> <span class="nav-text">4. Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Run"><span class="nav-number">1.5.</span> <span class="nav-text">5. Run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Open-in-browser"><span class="nav-number">1.6.</span> <span class="nav-text">6. Open in browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Modify-configuration-file"><span class="nav-number">1.7.</span> <span class="nav-text">7. Modify configuration file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Change-the-Hexo-theme"><span class="nav-number">1.8.</span> <span class="nav-text">8. Change the Hexo theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Re-run"><span class="nav-number">1.9.</span> <span class="nav-text">9. Re-run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Write-an-article"><span class="nav-number">1.10.</span> <span class="nav-text">10. Write an article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Tags-for-article"><span class="nav-number">1.11.</span> <span class="nav-text">11. Tags for article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Categories-for-article"><span class="nav-number">1.12.</span> <span class="nav-text">12. Categories for article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-Comments"><span class="nav-number">1.13.</span> <span class="nav-text">13. Comments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-Deploy-to-Github"><span class="nav-number">1.14.</span> <span class="nav-text">14. Deploy to Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-Open-in-browser"><span class="nav-number">1.15.</span> <span class="nav-text">15. Open in browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-Create-modify-and-delete-articles"><span class="nav-number">1.16.</span> <span class="nav-text">16. Create, modify, and delete articles</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Tutorial-to-deploy-hexo-to-github-page"><span class="nav-number">1.</span> <span class="nav-text">Tutorial to deploy hexo to github page</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-node"><span class="nav-number">1.1.</span> <span class="nav-text">Install node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Initiation"><span class="nav-number">1.3.</span> <span class="nav-text">Initiation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install"><span class="nav-number">1.4.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run"><span class="nav-number">1.5.</span> <span class="nav-text">Run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Open-in-browser"><span class="nav-number">1.6.</span> <span class="nav-text">Open in browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modify-configuration-file"><span class="nav-number">1.7.</span> <span class="nav-text">Modify configuration file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-the-Hexo-theme"><span class="nav-number">1.8.</span> <span class="nav-text">Change the Hexo theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Re-run"><span class="nav-number">1.9.</span> <span class="nav-text">Re-run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Write-an-article"><span class="nav-number">1.10.</span> <span class="nav-text">Write an article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tags-for-article"><span class="nav-number">1.11.</span> <span class="nav-text">Tags for article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Categories-for-article"><span class="nav-number">1.12.</span> <span class="nav-text">Categories for article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Comments"><span class="nav-number">1.13.</span> <span class="nav-text">Comments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-Github"><span class="nav-number">1.14.</span> <span class="nav-text">Deploy to Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Open-in-browser-1"><span class="nav-number">1.15.</span> <span class="nav-text">Open in browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-modify-and-delete-articles"><span class="nav-number">1.16.</span> <span class="nav-text">Create, modify, and delete articles</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -419,6 +439,9 @@ $ hexo clean; hexo g; hexo d</code></pre>
       <span class="links-of-author-item">
         <a href="mailto:panyuwen.x@gmail.com" title="E-Mail → mailto:panyuwen.x@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
