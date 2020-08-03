@@ -167,4 +167,16 @@ symbols_count_time:
         <tag>hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>2.set_up_gitlab_server</title>
+    <url>/2020/08/04/2-set-up-gitlab-server/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>gitlab</tag>
+      </tags>
+  </entry>
 </search>
