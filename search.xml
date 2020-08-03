@@ -5,7 +5,7 @@
     <url>/2020/08/02/1-start-my-blog-md/</url>
     <content><![CDATA[<p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
 <p>Here, I’m glad to share my <a href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work. </p>
-<h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="make-it-work"><a href="#make-it-work" class="headerlink" title="make it work"></a>make it work</h2><a id="more"></a>
+<h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="To-make-it-work"><a href="#To-make-it-work" class="headerlink" title="To make it work"></a>To make it work</h2><a id="more"></a>
 
 <h3 id="Install-Nodejs-amp-Hexo"><a href="#Install-Nodejs-amp-Hexo" class="headerlink" title="Install Nodejs &amp; Hexo"></a>Install <a href="https://nodejs.org/zh-cn/download/">Nodejs</a> &amp; Hexo</h3><pre><code>## Download and install nodejs on your computer, https://nodejs.org/zh-cn/download/
 ## then install hexo
@@ -84,8 +84,9 @@ $ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, t
 $ vim source/_posts/ArticleName.md  ## modify
 $ rm source/_posts/ArticleName.md  ## delete
 $ hexo clean; hexo g; hexo d  ## deploy</code></pre>
-<h2 id="make-it-fancy"><a href="#make-it-fancy" class="headerlink" title="make it fancy"></a>make it fancy</h2><pre><code>## modify themes/next/_config.yml (default)</code></pre>
-<h3 id="Theme-Core-Configuration-Settings"><a href="#Theme-Core-Configuration-Settings" class="headerlink" title="Theme Core Configuration Settings"></a>Theme Core Configuration Settings</h3><pre><code>$ git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
+<h2 id="To-make-it-fancy"><a href="#To-make-it-fancy" class="headerlink" title="To make it fancy"></a>To make it fancy</h2><h3 id="Theme-Core-Configuration-Settings"><a href="#Theme-Core-Configuration-Settings" class="headerlink" title="Theme Core Configuration Settings"></a>Theme Core Configuration Settings</h3><pre><code>$ git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
+
+## modify themes/next/_config.yml (default)
 
 canvas_nest:
   enable: true
