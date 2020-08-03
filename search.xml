@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>1. start my blog</title>
+    <url>/2020/08/02/1-start-my-blog-md/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
+<p>Here, I’m glad to share my <a href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work. </p>
+<h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="make-it-work"><a href="#make-it-work" class="headerlink" title="make it work"></a>make it work</h2><a id="more"></a>
+
+<h3 id="Install-Nodejs-amp-Hexo"><a href="#Install-Nodejs-amp-Hexo" class="headerlink" title="Install Nodejs &amp; Hexo"></a>Install <a href="https://nodejs.org/zh-cn/download/">Nodejs</a> &amp; Hexo</h3><pre><code>## Download and install nodejs on your computer, https://nodejs.org/zh-cn/download/
+## then install hexo
+$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org  ## to speed up
+$ cnpm install hexo-cli -g</code></pre>
+<h3 id="Initiation-install-amp-run"><a href="#Initiation-install-amp-run" class="headerlink" title="Initiation, install, &amp; run"></a>Initiation, install, &amp; run</h3><pre><code>$ hexo init panyuwen.github.io ## same username as your guthub account
+$ cd panyuwen.github.io
+$ cnpm install
+$ hexo clean ## clean cache
+$ hexo g     ## generate static page
+$ hexo s     ## run on server
+
+## then open your browser
+## direct to localhost:4000
+## you would see your web page v1.0</code></pre>
+<h3 id="Modify-configuration-file"><a href="#Modify-configuration-file" class="headerlink" title="Modify configuration file"></a>Modify configuration file</h3><pre><code>$ vim _config.yml
+## change title, and so on</code></pre>
+<h3 id="Change-the-Hexo-theme"><a href="#Change-the-Hexo-theme" class="headerlink" title="Change the Hexo theme"></a>Change the Hexo theme</h3><pre><code>$ git clone https://github.com/theme-next/hexo-theme-next themes/next
+
+## Then modify _config.yml
+##   theme: next
+
+$ hexo g; hexo s  ## re-run</code></pre>
+<h3 id="Write-an-article"><a href="#Write-an-article" class="headerlink" title="Write an article"></a>Write an article</h3><pre><code>$ hexo new ArticleName
+$ vim source/_posts/ArticleName.md</code></pre>
+<h3 id="Tags-amp-Categories-for-your-article"><a href="#Tags-amp-Categories-for-your-article" class="headerlink" title="Tags &amp; Categories for your article"></a>Tags &amp; Categories for your article</h3><pre><code>$ hexo new page tags  ## to start the function
+$ hexo new page categories
+
+## Modify _config.yml
+    tag_dir: tags
+
+## Modify source/tags/index.md
+    ---
+    title: tags
+    date: xxx
+    type: &quot;tags&quot;
+    comments: false
+    ---
+
+## Modify _config.yml
+    category_dir: categories
+
+## Modify source/categories/index.md
+    ---
+    title: categories
+    date: XXX
+    type: &quot;categories&quot;
+    comments: false
+    ---
+
+## Add categories &amp; tags to the article
+    ---
+    title: xxx
+    date: xxx
+    categories:
+    - category
+    tags:
+    - tag1
+    - tag2
+    ---</code></pre>
+<h3 id="Deploy-to-Github"><a href="#Deploy-to-Github" class="headerlink" title="Deploy to Github"></a>Deploy to Github</h3><pre><code>## Start a new public repository on github, named panyuwen.github.io
+## Install hexo-deployer-git
+$ cnpm install hexo-deployer-git --save
+
+## Modify _config.yml
+    deploy:
+      type: git
+      repo: https://panyuwen:&#123;yourpassword&#125;@github.com/panyuwen/panyuwen.github.io.git
+      branch: master
+
+$ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, try again
+
+## then open your browser
+## direct to https://panyuwen.github.io/</code></pre>
+<h3 id="Create-modify-and-delete-articles"><a href="#Create-modify-and-delete-articles" class="headerlink" title="Create, modify, and delete articles"></a>Create, modify, and delete articles</h3><pre><code>$ hexo new ArticleName  ## create
+$ vim source/_posts/ArticleName.md  ## modify
+$ rm source/_posts/ArticleName.md  ## delete
+$ hexo clean; hexo g; hexo d  ## deploy</code></pre>
+<h2 id="make-it-fancy"><a href="#make-it-fancy" class="headerlink" title="make it fancy"></a>make it fancy</h2><pre><code>## modify themes/next/_config.yml (default)</code></pre>
+<h3 id="Theme-Core-Configuration-Settings"><a href="#Theme-Core-Configuration-Settings" class="headerlink" title="Theme Core Configuration Settings"></a>Theme Core Configuration Settings</h3><pre><code>$ git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
+
+canvas_nest:
+  enable: true
+  count: 96</code></pre>
+<h3 id="Sidebar-Settings"><a href="#Sidebar-Settings" class="headerlink" title="Sidebar Settings"></a><a href="https://theme-next.org/docs/theme-settings/sidebar">Sidebar Settings</a></h3><pre><code>sidebar:
+  position: right
+  display: always
+
+avatar:
+  url: /images/IMG_F7DE10EB3810-1.jpeg  ## place the photo under theme/next/source/images/
+  rounded: true  ## the avatar will be dispalyed in circle
+
+social:
+  GitHub: https://github.com/panyuwen || fab fa-github
+  E-Mail: mailto:panyuwen.x@gmail.com || fa fa-envelope</code></pre>
+<h3 id="Post-Settings"><a href="#Post-Settings" class="headerlink" title="Post Settings"></a><a href="https://theme-next.org/docs/theme-settings/posts">Post Settings</a></h3><pre><code>reward_settings:
+  enable: true
+  animation: false
+  comment: Peace &amp; Love
+
+reward:
+  wechatpay: /images/wechat.JPG
+  alipay: /images/ali.JPG
+  ## put your QR code under theme/next/source/images/</code></pre>
+<h3 id="Search-Services"><a href="#Search-Services" class="headerlink" title="Search Services"></a><a href="https://theme-next.org/docs/third-party-services/search-services">Search Services</a></h3><pre><code>$ cnpm install hexo-generator-searchdb --save
+
+local_search:
+  enable: true
+
+## open _config.yml, and add
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000</code></pre>
+<h3 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h3><pre><code>powered: false
+theme: flase
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+
+## then open _config.yml
+# URL
+url: https://panyuwen.github.io/</code></pre>
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><pre><code>bookmark:
+  enable: true
+  save: manual
+
+github_banner:
+  enable: true
+  permalink: https://github.com/panyuwen
+  title: Follow me
+
+back2top:
+  enable: true
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+
+busuanzi_count:
+  enable: true
+  total_visitors: true
+  total_views: true
+  post_views: true
+
+$ cnpm install hexo-symbols-count-time
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: true</code></pre>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+</search>
