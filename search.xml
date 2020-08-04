@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2.set up a gitlab server</title>
+    <url>/2020/08/04/2-set-up-gitlab-server/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1. start my blog</title>
     <url>/2020/08/02/1-start-my-blog-md/</url>
     <content><![CDATA[<p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
@@ -166,18 +178,6 @@ symbols_count_time:
       <tags>
         <tag>github</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.set up a gitlab server</title>
-    <url>/2020/08/04/2-set-up-gitlab-server/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>gitlab</tag>
       </tags>
   </entry>
 </search>
