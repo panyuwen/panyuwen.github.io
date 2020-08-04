@@ -71,9 +71,10 @@ $ hexo new page categories
 $ cnpm install hexo-deployer-git --save
 
 ## Modify _config.yml
+## And add the SSH key to your github account (~/.ssh/id_rsa.pub)
     deploy:
       type: git
-      repo: https://panyuwen:&#123;yourpassword&#125;@github.com/panyuwen/panyuwen.github.io.git
+      repo: git@github.com:panyuwen/panyuwen.github.io.git
       branch: master
 
 $ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, try again
