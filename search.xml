@@ -4,7 +4,7 @@
     <title>1. start my blog</title>
     <url>/2020/08/02/1-start-my-blog-md/</url>
     <content><![CDATA[<p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
-<p>Here, I’m glad to share my <a href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work. </p>
+<p>Here, I’m going to share my <a href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work. </p>
 <h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="To-make-it-work"><a href="#To-make-it-work" class="headerlink" title="To make it work"></a>To make it work</h2><a id="more"></a>
 
 <h3 id="Install-Nodejs-amp-Hexo"><a href="#Install-Nodejs-amp-Hexo" class="headerlink" title="Install Nodejs &amp; Hexo"></a>Install <a href="https://nodejs.org/zh-cn/download/">Nodejs</a> &amp; Hexo</h3><pre><code>## Download and install nodejs on your computer, https://nodejs.org/zh-cn/download/
@@ -168,7 +168,7 @@ symbols_count_time:
       </tags>
   </entry>
   <entry>
-    <title>2.set_up_gitlab_server</title>
+    <title>2.set up a gitlab server</title>
     <url>/2020/08/04/2-set-up-gitlab-server/</url>
     <content><![CDATA[]]></content>
       <categories>
