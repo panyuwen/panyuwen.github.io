@@ -171,13 +171,41 @@ symbols_count_time:
   <entry>
     <title>2. set up a gitlab server</title>
     <url>/2020/08/04/2-set-up-gitlab-server/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
       <categories>
         <category>tutorial</category>
       </categories>
       <tags>
         <tag>github</tag>
         <tag>gitlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3. analysis pipeline with Snakemake</title>
+    <url>/2020/08/05/3-analysis-pipeline-with-Snakemake/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>snakemake</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4. plot a world map</title>
+    <url>/2020/08/05/4-plot-a-world-map/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>map</tag>
+        <tag>ggplot2</tag>
       </tags>
   </entry>
 </search>
