@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"panyuwen.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Welcome to yuwen pan’s blog!  Here, I’m going to share my codes as well my ideas about life, study, and work.  Tutorial to deploy hexo to github pageTo make it work">
+  <meta name="description" content="Welcome to yuwen pan’s blog! Happy to share with you my codes as well my ideas about life, study, and work. This is my first post, I’m going to share the way how I build my web. Follow my instruction,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1. start my blog">
 <meta property="og:url" content="https://panyuwen.github.io/2020/08/02/1-start-my-blog-md/index.html">
 <meta property="og:site_name" content="yuwen pan&#39;s blog">
-<meta property="og:description" content="Welcome to yuwen pan’s blog!  Here, I’m going to share my codes as well my ideas about life, study, and work.  Tutorial to deploy hexo to github pageTo make it work">
+<meta property="og:description" content="Welcome to yuwen pan’s blog! Happy to share with you my codes as well my ideas about life, study, and work. This is my first post, I’m going to share the way how I build my web. Follow my instruction,">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-01T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-08-04T12:10:50.967Z">
+<meta property="article:modified_time" content="2020-08-06T17:31:55.639Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="hexo">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-04 20:10:50" itemprop="dateModified" datetime="2020-08-04T20:10:50+08:00">2020-08-04</time>
+                <time title="Modified: 2020-08-07 01:31:55" itemprop="dateModified" datetime="2020-08-07T01:31:55+08:00">2020-08-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,13 +244,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
-<p>Here, I’m going to share my <a target="_blank" rel="noopener" href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work. </p>
-<h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="To-make-it-work"><a href="#To-make-it-work" class="headerlink" title="To make it work"></a>To make it work</h2><a id="more"></a>
+        <p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! Happy to share with you my <a target="_blank" rel="noopener" href="https://github.com/panyuwen">codes</a> as well my ideas about life, study, and work.</p>
+<p>This is my first post, I’m going to share the way how I build my web. Follow my instruction, and you could have your own web. </p>
+<a id="more"></a>
 
-<h3 id="Install-Nodejs-amp-Hexo"><a href="#Install-Nodejs-amp-Hexo" class="headerlink" title="Install Nodejs &amp; Hexo"></a>Install <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">Nodejs</a> &amp; Hexo</h3><pre><code>## Download and install nodejs on your computer, https://nodejs.org/zh-cn/download/
-## then install hexo
-$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org  ## to speed up
+<p>Before we start, you should have your own github account, since all the codes were deployed to github. Besides, you should have “git” installed on your computer, and it’s better to know some basic commands of git. You can find anything your want to know on the internet. I think <a href="https://panyuwen.github.io/2020/08/04/2-set-up-gitlab-server/">my second post</a> would also be helpful. </p>
+<h1 id="Tutorial-to-deploy-hexo-to-github-page"><a href="#Tutorial-to-deploy-hexo-to-github-page" class="headerlink" title="Tutorial to deploy hexo to github page"></a>Tutorial to deploy hexo to github page</h1><h2 id="To-make-it-work"><a href="#To-make-it-work" class="headerlink" title="To make it work"></a>To make it work</h2><h3 id="Install-Nodejs-amp-Hexo"><a href="#Install-Nodejs-amp-Hexo" class="headerlink" title="Install Nodejs &amp; Hexo"></a>Install <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">Nodejs</a> &amp; Hexo</h3><pre><code>## download and install nodejs on your computer, https://nodejs.org/zh-cn/download/
+## then install hexo on your computer
+$ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org  
+## use cnpm from taobao could speed up the following steps
 $ cnpm install hexo-cli -g</code></pre>
 <h3 id="Initiation-install-amp-run"><a href="#Initiation-install-amp-run" class="headerlink" title="Initiation, install, &amp; run"></a>Initiation, install, &amp; run</h3><pre><code>$ hexo init panyuwen.github.io ## same username as your guthub account
 $ cd panyuwen.github.io
@@ -261,24 +263,25 @@ $ hexo s     ## run on server
 
 ## then open your browser
 ## direct to localhost:4000
-## you would see your web page v1.0</code></pre>
+## if you see a web page, it&#39;s working
+## then let&#39;s make it a informative and useful web</code></pre>
 <h3 id="Modify-configuration-file"><a href="#Modify-configuration-file" class="headerlink" title="Modify configuration file"></a>Modify configuration file</h3><pre><code>$ vim _config.yml
 ## change title, and so on</code></pre>
 <h3 id="Change-the-Hexo-theme"><a href="#Change-the-Hexo-theme" class="headerlink" title="Change the Hexo theme"></a>Change the Hexo theme</h3><pre><code>$ git clone https://github.com/theme-next/hexo-theme-next themes/next
 
-## Then modify _config.yml
+## then modify _config.yml, change the &quot;theme&quot;
 ##   theme: next
 
-$ hexo g; hexo s  ## re-run</code></pre>
+$ hexo g; hexo s  ## re-run to enjoy your new web</code></pre>
 <h3 id="Write-an-article"><a href="#Write-an-article" class="headerlink" title="Write an article"></a>Write an article</h3><pre><code>$ hexo new ArticleName
 $ vim source/_posts/ArticleName.md</code></pre>
 <h3 id="Tags-amp-Categories-for-your-article"><a href="#Tags-amp-Categories-for-your-article" class="headerlink" title="Tags &amp; Categories for your article"></a>Tags &amp; Categories for your article</h3><pre><code>$ hexo new page tags  ## to start the function
 $ hexo new page categories
 
-## Modify _config.yml
+## modify _config.yml
     tag_dir: tags
 
-## Modify source/tags/index.md
+## modify source/tags/index.md
     ---
     title: tags
     date: xxx
@@ -286,10 +289,10 @@ $ hexo new page categories
     comments: false
     ---
 
-## Modify _config.yml
+## modify _config.yml
     category_dir: categories
 
-## Modify source/categories/index.md
+## modify source/categories/index.md
     ---
     title: categories
     date: XXX
@@ -297,7 +300,7 @@ $ hexo new page categories
     comments: false
     ---
 
-## Add categories &amp; tags to the article
+## add categories &amp; tags to the article
     ---
     title: xxx
     date: xxx
@@ -307,18 +310,35 @@ $ hexo new page categories
     - tag1
     - tag2
     ---</code></pre>
-<h3 id="Deploy-to-Github"><a href="#Deploy-to-Github" class="headerlink" title="Deploy to Github"></a>Deploy to Github</h3><pre><code>## Start a new public repository on github, named panyuwen.github.io
-## Install hexo-deployer-git
+<h3 id="Deploy-to-Github"><a href="#Deploy-to-Github" class="headerlink" title="Deploy to Github"></a>Deploy to Github</h3><pre><code>## now, it&#39;s time to show your web to the whole world
+## start a new public repository on github, named panyuwen.github.io
+## install hexo-deployer-git (the following command)
 $ cnpm install hexo-deployer-git --save
 
-## Modify _config.yml
-## And add the SSH key to your github account (~/.ssh/id_rsa.pub)
+## modify _config.yml, to add your github account, so that your machine knows where to deploy your codes
+## there&#39;re 2 ways to avoid typing your password again and again
+
+## 1. 
+## copy your SSH key in ~/.ssh/id_rsa.pub
+## in your github account, click your mouse, your avatar --&gt; setting --&gt; SSH and GPG keys --&gt; new SSH key --&gt; paste &amp; save
+## if you don&#39;t have your SSH key, use the command &quot;ssh-keygen -t rsa&quot; to generate
+## if you think its difficult, you can just turn to way 2
+## if you have succeed in adding your SSH key to your github account, then modify _config.yml
     deploy:
       type: git
       repo: git@github.com:panyuwen/panyuwen.github.io.git
       branch: master
 
-$ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, try again
+## 2.
+    deploy:
+      type: git
+      repo: https://panyuwen:&#123;your_password&#125;@github.com/panyuwen/panyuwen.github.io.git
+      branch: master
+
+## deploy
+## might be unstable in China
+## if it fails, just try again
+$ hexo clean; hexo g; hexo d  
 
 ## then open your browser
 ## direct to https://panyuwen.github.io/</code></pre>
@@ -326,9 +346,8 @@ $ hexo clean; hexo g; hexo d  ## deploy, might be unstable in China. if fails, t
 $ vim source/_posts/ArticleName.md  ## modify
 $ rm source/_posts/ArticleName.md  ## delete
 $ hexo clean; hexo g; hexo d  ## deploy</code></pre>
-<h2 id="To-make-it-fancy"><a href="#To-make-it-fancy" class="headerlink" title="To make it fancy"></a>To make it fancy</h2><h3 id="Theme-Core-Configuration-Settings"><a href="#Theme-Core-Configuration-Settings" class="headerlink" title="Theme Core Configuration Settings"></a>Theme Core Configuration Settings</h3><pre><code>$ git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
-
-## modify themes/next/_config.yml (default)
+<h2 id="To-make-it-fancy"><a href="#To-make-it-fancy" class="headerlink" title="To make it fancy"></a>To make it fancy</h2><p>We are going to modify themes/next/_config.yml (default)</p>
+<h3 id="Dynamic-Background"><a href="#Dynamic-Background" class="headerlink" title="Dynamic Background"></a>Dynamic Background</h3><pre><code>$ git clone https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
 
 canvas_nest:
   enable: true
@@ -364,7 +383,7 @@ search:
   field: post
   format: html
   limit: 10000</code></pre>
-<h3 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h3><pre><code>powered: false
+<h3 id="Site-Information-Settings-copyright"><a href="#Site-Information-Settings-copyright" class="headerlink" title="Site Information Settings (copyright)"></a>Site Information Settings (copyright)</h3><pre><code>powered: false
 theme: flase
 
 creative_commons:
@@ -399,7 +418,11 @@ $ cnpm install hexo-symbols-count-time
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: true</code></pre>
+  item_text_total: true
+
+$ cnpm i hexo-wordcount --save
+## then open _config.yml, then add
+    word_count: true</code></pre>
 
     </div>
 
@@ -518,7 +541,7 @@ symbols_count_time:
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Tutorial-to-deploy-hexo-to-github-page"><span class="nav-number">1.</span> <span class="nav-text">Tutorial to deploy hexo to github page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#To-make-it-work"><span class="nav-number">1.1.</span> <span class="nav-text">To make it work</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Nodejs-amp-Hexo"><span class="nav-number">1.1.1.</span> <span class="nav-text">Install Nodejs &amp; Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Initiation-install-amp-run"><span class="nav-number">1.1.2.</span> <span class="nav-text">Initiation, install, &amp; run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modify-configuration-file"><span class="nav-number">1.1.3.</span> <span class="nav-text">Modify configuration file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-the-Hexo-theme"><span class="nav-number">1.1.4.</span> <span class="nav-text">Change the Hexo theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Write-an-article"><span class="nav-number">1.1.5.</span> <span class="nav-text">Write an article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tags-amp-Categories-for-your-article"><span class="nav-number">1.1.6.</span> <span class="nav-text">Tags &amp; Categories for your article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-Github"><span class="nav-number">1.1.7.</span> <span class="nav-text">Deploy to Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-modify-and-delete-articles"><span class="nav-number">1.1.8.</span> <span class="nav-text">Create, modify, and delete articles</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#To-make-it-fancy"><span class="nav-number">1.2.</span> <span class="nav-text">To make it fancy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Theme-Core-Configuration-Settings"><span class="nav-number">1.2.1.</span> <span class="nav-text">Theme Core Configuration Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sidebar-Settings"><span class="nav-number">1.2.2.</span> <span class="nav-text">Sidebar Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Post-Settings"><span class="nav-number">1.2.3.</span> <span class="nav-text">Post Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search-Services"><span class="nav-number">1.2.4.</span> <span class="nav-text">Search Services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Site-Information-Settings"><span class="nav-number">1.2.5.</span> <span class="nav-text">Site Information Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Others"><span class="nav-number">1.2.6.</span> <span class="nav-text">Others</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Tutorial-to-deploy-hexo-to-github-page"><span class="nav-number">1.</span> <span class="nav-text">Tutorial to deploy hexo to github page</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#To-make-it-work"><span class="nav-number">1.1.</span> <span class="nav-text">To make it work</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Nodejs-amp-Hexo"><span class="nav-number">1.1.1.</span> <span class="nav-text">Install Nodejs &amp; Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Initiation-install-amp-run"><span class="nav-number">1.1.2.</span> <span class="nav-text">Initiation, install, &amp; run</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modify-configuration-file"><span class="nav-number">1.1.3.</span> <span class="nav-text">Modify configuration file</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Change-the-Hexo-theme"><span class="nav-number">1.1.4.</span> <span class="nav-text">Change the Hexo theme</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Write-an-article"><span class="nav-number">1.1.5.</span> <span class="nav-text">Write an article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tags-amp-Categories-for-your-article"><span class="nav-number">1.1.6.</span> <span class="nav-text">Tags &amp; Categories for your article</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-Github"><span class="nav-number">1.1.7.</span> <span class="nav-text">Deploy to Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-modify-and-delete-articles"><span class="nav-number">1.1.8.</span> <span class="nav-text">Create, modify, and delete articles</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#To-make-it-fancy"><span class="nav-number">1.2.</span> <span class="nav-text">To make it fancy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dynamic-Background"><span class="nav-number">1.2.1.</span> <span class="nav-text">Dynamic Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sidebar-Settings"><span class="nav-number">1.2.2.</span> <span class="nav-text">Sidebar Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Post-Settings"><span class="nav-number">1.2.3.</span> <span class="nav-text">Post Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Search-Services"><span class="nav-number">1.2.4.</span> <span class="nav-text">Search Services</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Site-Information-Settings-copyright"><span class="nav-number">1.2.5.</span> <span class="nav-text">Site Information Settings (copyright)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Others"><span class="nav-number">1.2.6.</span> <span class="nav-text">Others</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -545,7 +568,7 @@ symbols_count_time:
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
