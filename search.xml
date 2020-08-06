@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>0. introduction to github</title>
+    <url>/2020/08/06/0-introduction-to-github/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3. analysis pipeline with Snakemake</title>
+    <url>/2020/08/05/3-analysis-pipeline-with-Snakemake/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>snakemake</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>1. start my blog</title>
     <url>/2020/08/02/1-start-my-blog-md/</url>
     <content><![CDATA[<p>Welcome to <a href="https://panyuwen.github.io/">yuwen pan’s blog</a>! </p>
@@ -169,56 +193,6 @@ symbols_count_time:
       </tags>
   </entry>
   <entry>
-    <title>0.introduction_to_github</title>
-    <url>/2020/08/06/0-introduction-to-github/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2. set up a gitlab server</title>
-    <url>/2020/08/04/2-set-up-gitlab-server/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>github</tag>
-        <tag>gitlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>3. analysis pipeline with Snakemake</title>
-    <url>/2020/08/05/3-analysis-pipeline-with-Snakemake/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>snakemake</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>5. something about FDR</title>
-    <url>/2020/08/05/5-something-about-FDR/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>statistics</category>
-      </categories>
-      <tags>
-        <tag>false discovery rate</tag>
-        <tag>distribution</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>6. genetic diversity</title>
     <url>/2020/08/06/6-genetic-diversity/</url>
     <content><![CDATA[<p>to be finished……</p>
@@ -244,6 +218,32 @@ symbols_count_time:
         <tag>R</tag>
         <tag>map</tag>
         <tag>ggplot2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5. something about FDR</title>
+    <url>/2020/08/05/5-something-about-FDR/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>statistics</category>
+      </categories>
+      <tags>
+        <tag>false discovery rate</tag>
+        <tag>distribution</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2. set up a gitlab server</title>
+    <url>/2020/08/04/2-set-up-gitlab-server/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>gitlab</tag>
       </tags>
   </entry>
 </search>
