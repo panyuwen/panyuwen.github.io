@@ -169,16 +169,17 @@ symbols_count_time:
       </tags>
   </entry>
   <entry>
-    <title>2. set up a gitlab server</title>
-    <url>/2020/08/04/2-set-up-gitlab-server/</url>
+    <title>4. plot a world map</title>
+    <url>/2020/08/05/4-plot-a-world-map/</url>
     <content><![CDATA[<p>to be finished……</p>
 ]]></content>
       <categories>
         <category>tutorial</category>
       </categories>
       <tags>
-        <tag>github</tag>
-        <tag>gitlab</tag>
+        <tag>R</tag>
+        <tag>map</tag>
+        <tag>ggplot2</tag>
       </tags>
   </entry>
   <entry>
@@ -195,20 +196,6 @@ symbols_count_time:
       </tags>
   </entry>
   <entry>
-    <title>4. plot a world map</title>
-    <url>/2020/08/05/4-plot-a-world-map/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>map</tag>
-        <tag>ggplot2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5. something about FDR</title>
     <url>/2020/08/05/5-something-about-FDR/</url>
     <content><![CDATA[<p>to be finished……</p>
@@ -219,6 +206,33 @@ symbols_count_time:
       <tags>
         <tag>false discovery rate</tag>
         <tag>distribution</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>6.genetic_diversity</title>
+    <url>/2020/08/06/6-genetic-diversity/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>statistics</category>
+      </categories>
+      <tags>
+        <tag>population</tag>
+        <tag>genetics</tag>
+        <tag>diversity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2. set up a gitlab server</title>
+    <url>/2020/08/04/2-set-up-gitlab-server/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>gitlab</tag>
       </tags>
   </entry>
 </search>
