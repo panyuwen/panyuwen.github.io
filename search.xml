@@ -177,11 +177,7 @@ $ cnpm install hexo-symbols-count-time
 symbols_count_time:
   separated_meta: true
   item_text_post: true
-  item_text_total: true
-
-$ cnpm i hexo-wordcount --save
-## then open _config.yml, then add
-    word_count: true</code></pre>
+  item_text_total: true</code></pre>
 ]]></content>
       <categories>
         <category>tutorial</category>
@@ -218,6 +214,33 @@ $ cnpm i hexo-wordcount --save
       </tags>
   </entry>
   <entry>
+    <title>4. plot a world map</title>
+    <url>/2020/08/05/4-plot-a-world-map/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>map</tag>
+        <tag>ggplot2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5. something about FDR</title>
+    <url>/2020/08/05/5-something-about-FDR/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>statistics</category>
+      </categories>
+      <tags>
+        <tag>false discovery rate</tag>
+        <tag>distribution</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>6. genetic diversity</title>
     <url>/2020/08/06/6-genetic-diversity/</url>
     <content><![CDATA[<h1 id="Genetic-diveristy"><a href="#Genetic-diveristy" class="headerlink" title="Genetic diveristy"></a>Genetic diveristy</h1><h2 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a>Preface</h2><p>Genetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate the higher stability. </p>
@@ -235,33 +258,6 @@ $ cnpm i hexo-wordcount --save
       <tags>
         <tag>population genetics</tag>
         <tag>diversity</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>5. something about FDR</title>
-    <url>/2020/08/05/5-something-about-FDR/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>statistics</category>
-      </categories>
-      <tags>
-        <tag>false discovery rate</tag>
-        <tag>distribution</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4. plot a world map</title>
-    <url>/2020/08/05/4-plot-a-world-map/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>map</tag>
-        <tag>ggplot2</tag>
       </tags>
   </entry>
 </search>
