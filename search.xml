@@ -214,20 +214,6 @@ symbols_count_time:
       </tags>
   </entry>
   <entry>
-    <title>4. plot a world map</title>
-    <url>/2020/08/05/4-plot-a-world-map/</url>
-    <content><![CDATA[<p>to be finished……</p>
-]]></content>
-      <categories>
-        <category>tutorial</category>
-      </categories>
-      <tags>
-        <tag>R</tag>
-        <tag>map</tag>
-        <tag>ggplot2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5. something about FDR</title>
     <url>/2020/08/05/5-something-about-FDR/</url>
     <content><![CDATA[<p>to be finished……</p>
@@ -243,7 +229,7 @@ symbols_count_time:
   <entry>
     <title>6. genetic diversity</title>
     <url>/2020/08/06/6-genetic-diversity/</url>
-    <content><![CDATA[<h1 id="Genetic-diveristy"><a href="#Genetic-diveristy" class="headerlink" title="Genetic diveristy"></a>Genetic diveristy</h1><h2 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a>Preface</h2><p>Genetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate the higher stability. </p>
+    <content><![CDATA[<h1 id="Genetic-diversity"><a href="#Genetic-diversity" class="headerlink" title="Genetic diversity"></a>Genetic diversity</h1><h2 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a>Preface</h2><p>Genetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate the higher stability. </p>
 <a id="more"></a>
 
 <p>Factors including genetic drift, natural selection, migration, gene flow, population admixture, bottleneck, and sexual selection may influence the genetic diveristy. </p>
@@ -258,6 +244,20 @@ symbols_count_time:
       <tags>
         <tag>population genetics</tag>
         <tag>diversity</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4. plot a world map</title>
+    <url>/2020/08/05/4-plot-a-world-map/</url>
+    <content><![CDATA[<p>to be finished……</p>
+]]></content>
+      <categories>
+        <category>tutorial</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+        <tag>map</tag>
+        <tag>ggplot2</tag>
       </tags>
   </entry>
 </search>
