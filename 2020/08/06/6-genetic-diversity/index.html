@@ -28,7 +28,7 @@
 <meta property="og:description" content="Genetic diversityPrefaceGenetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-06T03:35:13.000Z">
-<meta property="article:modified_time" content="2020-08-09T17:47:41.122Z">
+<meta property="article:modified_time" content="2020-08-09T18:21:08.862Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="population genetics">
 <meta property="article:tag" content="diversity">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-10 01:47:41" itemprop="dateModified" datetime="2020-08-10T01:47:41+08:00">2020-08-10</time>
+                <time title="Modified: 2020-08-10 02:21:08" itemprop="dateModified" datetime="2020-08-10T02:21:08+08:00">2020-08-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -305,9 +305,25 @@
 <p>see the <code>Effective population size</code> section for more details about these formulas</p>
 </blockquote>
 <p>There are many estimators of $\theta$, including average pairwise differences (nucleotide diversity) ($\theta_\pi$), number of segregating sites ($\theta_K$), and so on.</p>
-<h3 id="Nucleotide-diversity"><a href="#Nucleotide-diversity" class="headerlink" title="Nucleotide diversity"></a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Nucleotide_diversity">Nucleotide diversity</a></h3><p>One commonly used measure of nucleotide diversity was first introduced by Nei and Li in 1979. This measure is defined as the average number of nucleotide differences per site between two DNA sequences in all possible pairs in the sample population, and is denoted by {\displaystyle \pi }\pi .</p>
+<h3 id="Nucleotide-diversity-theta-pi"><a href="#Nucleotide-diversity-theta-pi" class="headerlink" title="Nucleotide diversity ($\theta_\pi$)"></a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Nucleotide_diversity">Nucleotide diversity</a> ($\theta_\pi$)</h3><p>One commonly used measure of nucleotide diversity was first introduced by Nei and Li in 1979. This measure is defined as the average number of nucleotide differences per site between two DNA sequences in all possible pairs in the sample population, and is denoted by $\pi$.</p>
 <p>It is given by the formula:</p>
-<h3 id="Segregating-site"><a href="#Segregating-site" class="headerlink" title="Segregating site"></a>Segregating site</h3><h3 id="Haplotype-diversity"><a href="#Haplotype-diversity" class="headerlink" title="Haplotype diversity"></a>Haplotype diversity</h3><h3 id="TMRCA"><a href="#TMRCA" class="headerlink" title="TMRCA"></a>TMRCA</h3>
+<p>$\pi=\sum{x_ix_j\pi_{ij}}=2*\sum_{i=2}^{n}{\sum_{j=1}^{i-1}x_ix_j\pi_{ij}}$</p>
+<blockquote>
+<p>where $x_i$ and $x_j$ are the respective frequencies of the $i^{th}$ and $j^{th}$ sequences, $\pi_{ij}$ is the number of nucleotide differences per nucleotide site between the $i^{th}$ and $j^{th}$ sequences, and $n$ is the number of sequences in the sample.</p>
+</blockquote>
+<blockquote>
+<p>Nei, M., and Li, W.H. (1979). MATHEMATICAL-MODEL FOR STUDYING GENETIC-VARIATION IN TERMS OF RESTRICTION ENDONUCLEASES. PANS</p>
+</blockquote>
+<p>There is an easier way to calculate $\pi$.<br>For a particular locus $i$ in one population, we have</p>
+<p>$\pi_i=\frac{number, of, allele, 1 \ <em>\  number, of, allele, 2}{n</em>(n-1)/2}$</p>
+<p>then,</p>
+<p>$\pi=\sum_{}^{L}\pi_i$</p>
+<blockquote>
+<p>where $n$ is the number of sequences, and $L$ is the total number of loci on the DNA sequence</p>
+<p>which means we can easily calculate $\pi$ based on the summary data of allele frequency</p>
+<p>this formula is only for biallelic loci. It’s also easy to conduct the formula for multiallelic loci.</p>
+</blockquote>
+<h3 id="Number-of-segregating-site-theta-K"><a href="#Number-of-segregating-site-theta-K" class="headerlink" title="Number of segregating site ($\theta_K$)"></a>Number of segregating site ($\theta_K$)</h3><h3 id="Haplotype-diversity"><a href="#Haplotype-diversity" class="headerlink" title="Haplotype diversity"></a>Haplotype diversity</h3><h3 id="TMRCA"><a href="#TMRCA" class="headerlink" title="TMRCA"></a>TMRCA</h3>
     </div>
 
     
@@ -425,7 +441,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNA-polymorphism"><span class="nav-number">1.2.</span> <span class="nav-text">DNA polymorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.3.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Effective-population-size"><span class="nav-number">1.4.</span> <span class="nav-text">Effective population size</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Population-mutation-rate-theta"><span class="nav-number">1.5.</span> <span class="nav-text">Population mutation rate ($\theta$)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nucleotide-diversity"><span class="nav-number">1.5.1.</span> <span class="nav-text">Nucleotide diversity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Segregating-site"><span class="nav-number">1.5.2.</span> <span class="nav-text">Segregating site</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Haplotype-diversity"><span class="nav-number">1.5.3.</span> <span class="nav-text">Haplotype diversity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TMRCA"><span class="nav-number">1.5.4.</span> <span class="nav-text">TMRCA</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNA-polymorphism"><span class="nav-number">1.2.</span> <span class="nav-text">DNA polymorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.3.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Effective-population-size"><span class="nav-number">1.4.</span> <span class="nav-text">Effective population size</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Population-mutation-rate-theta"><span class="nav-number">1.5.</span> <span class="nav-text">Population mutation rate ($\theta$)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nucleotide-diversity-theta-pi"><span class="nav-number">1.5.1.</span> <span class="nav-text">Nucleotide diversity ($\theta_\pi$)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Number-of-segregating-site-theta-K"><span class="nav-number">1.5.2.</span> <span class="nav-text">Number of segregating site ($\theta_K$)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Haplotype-diversity"><span class="nav-number">1.5.3.</span> <span class="nav-text">Haplotype diversity</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TMRCA"><span class="nav-number">1.5.4.</span> <span class="nav-text">TMRCA</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
