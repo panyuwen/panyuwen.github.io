@@ -28,7 +28,7 @@
 <meta property="og:description" content="Genetic diversityPrefaceGenetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-06T03:35:13.000Z">
-<meta property="article:modified_time" content="2020-08-07T07:21:26.102Z">
+<meta property="article:modified_time" content="2020-08-09T16:58:29.971Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="population genetics">
 <meta property="article:tag" content="diversity">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-07 15:21:26" itemprop="dateModified" datetime="2020-08-07T15:21:26+08:00">2020-08-07</time>
+                <time title="Modified: 2020-08-10 00:58:29" itemprop="dateModified" datetime="2020-08-10T00:58:29+08:00">2020-08-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -252,7 +252,37 @@
 <p>We have to know about ourselves, about our origin, also about our futher. The key to the futher is on our genome, passed from our ancestors. We are generating huge mount of genetic data and we are decoding the variations on our genome. We are amazed about the diversity of our genome. </p>
 <p>Now, let’s focus on the etimators of the genetic diveristy. </p>
 <p>Before we start, you can also go through the introduction to <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Genetic_diversity">genetic diveristy</a> on Wikipedia</p>
-<h2 id="Heterozygosity"><a href="#Heterozygosity" class="headerlink" title="Heterozygosity"></a>Heterozygosity</h2><h2 id="Inbreeding-coefficient"><a href="#Inbreeding-coefficient" class="headerlink" title="Inbreeding coefficient"></a>Inbreeding coefficient</h2><h2 id="Effective-population-size"><a href="#Effective-population-size" class="headerlink" title="Effective population size"></a>Effective population size</h2><h2 id="Nucleotide-diversity"><a href="#Nucleotide-diversity" class="headerlink" title="Nucleotide diversity"></a>Nucleotide diversity</h2><h2 id="Segregating-site"><a href="#Segregating-site" class="headerlink" title="Segregating site"></a>Segregating site</h2><h2 id="Haplotype-diversity"><a href="#Haplotype-diversity" class="headerlink" title="Haplotype diversity"></a>Haplotype diversity</h2>
+<h2 id="DNA-polymorphism"><a href="#DNA-polymorphism" class="headerlink" title="DNA polymorphism"></a>DNA polymorphism</h2><p>DNA polymorphisms indicates the variations on DNA sequences among individuals and populations. The forms of DNA polymorphisms include <code>single nucleotide polymorphisms (SNPs)</code>, variable number of tandem repeats (VNTRs, e.g., minisatellites), short tandom repeat (STR, e.g., microsatellite), copy number variation (CNV), and so on. </p>
+<p>SNPs are the most common type of genetic variations in humans (90% of all human DNA polymorphism). A SNP is a substitution of a single nucleotide at a specific position in the genome, that is present in a sufficiently large fraction of the population (e.g. 1% or more). And a single-nucleotide variant (SNV) is a variation in a single nucleotide without any <code>limitations of frequency </code>(which should be minor allele frequency (MAF) &gt;1%). </p>
+<p>There has been identified millions of comman SNPs among human populations (MAF &gt;5%) (roughly, say 5~10 million). It implies ~0.1% difference between every two humans. P.S. it should be ~1% between human and Chimpanzee. </p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism</a><br>Dr. Shuhua Xu’s slides</p>
+</blockquote>
+<p>In population genetics, we usually focus on biallelic SNPs, which means two allelic variants are segregating in the population. Since majority of SNPs in humans are biallelic. It’s the low mutation rate and short evolution time of human beings that matters, time is required to have mutations occured on human genome, and much more time is required to have mutations occured on the same locus more than once.</p>
+<blockquote>
+<p>mutation rate: $1.25*10^{-8}$ per site per generation<br>time to most comman ancestor (TMRCA): ~6 million years between human &amp; chimpanzee</p>
+<p>mutation rate would be $2.5*10^{-8}$ per site per generation if TMRCA=~13 million years</p>
+<p>so we have 2 mutation rate, slow &amp; fast</p>
+</blockquote>
+<h2 id="Heterozygosity"><a href="#Heterozygosity" class="headerlink" title="Heterozygosity"></a>Heterozygosity</h2><p>The fraction of individuals in a population that are heterozygous for a particular locus.</p>
+<p>Observed: $H_o=\frac{\sum_{1}^{n}(1 ,if, a_{i1}\ne a_{i2})}{n}$</p>
+<blockquote>
+<p>where n is the number of individuals in the population, and $a_{i1}$, $a_{i2}$ are the alleles of individual i at the target locus.</p>
+</blockquote>
+<p>Expected: $H_e=1-\sum_{1}^{m}(f_i)^2$</p>
+<blockquote>
+<p>where m is the number of alleles at the target locus, and $f_i$ is the allele frequency of the $i^{th}$ allele at the target locus.</p>
+</blockquote>
+<p>High heterozygosity means lots of genetic variability.  Low heterozygosity means little genetic variability, which may also indicate severe effects of small population sizes (e.g., population bottlenecks). </p>
+<p>Often, we will compare the observed level of heterozygosity to what we expect under Hardy-Weinberg equilibrium (HWE). If the observed heterozygosity is lower than expected, we seek to attribute the discrepancy to forces such as inbreeding. If heterozygosity is higher than expected, we might suspect an isolate-breaking effect (the mixing of two previously isolated populations). </p>
+<blockquote>
+<p>HWE: $p^2+2pq+q^2=1$</p>
+<p><a target="_blank" rel="noopener" href="http://www.uwyo.edu/dbmcd/molmark/lect04/lect4.html">http://www.uwyo.edu/dbmcd/molmark/lect04/lect4.html</a><br>Dr. Shuhua Xu’s slides</p>
+</blockquote>
+<blockquote>
+<p>We can further calcluate the F statistic based on heterozygosity.<br>We may table about the F statistic in another post.  </p>
+</blockquote>
+<h2 id="Population-mutation-rate-theta"><a href="#Population-mutation-rate-theta" class="headerlink" title="Population mutation rate ($\theta$)"></a>Population mutation rate ($\theta$)</h2><h2 id="Nucleotide-diversity"><a href="#Nucleotide-diversity" class="headerlink" title="Nucleotide diversity"></a>Nucleotide diversity</h2><h2 id="Segregating-site"><a href="#Segregating-site" class="headerlink" title="Segregating site"></a>Segregating site</h2><h2 id="Haplotype-diversity"><a href="#Haplotype-diversity" class="headerlink" title="Haplotype diversity"></a>Haplotype diversity</h2><h2 id="TMRCA"><a href="#TMRCA" class="headerlink" title="TMRCA"></a>TMRCA</h2>
     </div>
 
     
@@ -370,7 +400,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.2.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inbreeding-coefficient"><span class="nav-number">1.3.</span> <span class="nav-text">Inbreeding coefficient</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Effective-population-size"><span class="nav-number">1.4.</span> <span class="nav-text">Effective population size</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nucleotide-diversity"><span class="nav-number">1.5.</span> <span class="nav-text">Nucleotide diversity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Segregating-site"><span class="nav-number">1.6.</span> <span class="nav-text">Segregating site</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Haplotype-diversity"><span class="nav-number">1.7.</span> <span class="nav-text">Haplotype diversity</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNA-polymorphism"><span class="nav-number">1.2.</span> <span class="nav-text">DNA polymorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.3.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Population-mutation-rate-theta"><span class="nav-number">1.4.</span> <span class="nav-text">Population mutation rate ($\theta$)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nucleotide-diversity"><span class="nav-number">1.5.</span> <span class="nav-text">Nucleotide diversity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Segregating-site"><span class="nav-number">1.6.</span> <span class="nav-text">Segregating site</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Haplotype-diversity"><span class="nav-number">1.7.</span> <span class="nav-text">Haplotype diversity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TMRCA"><span class="nav-number">1.8.</span> <span class="nav-text">TMRCA</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
