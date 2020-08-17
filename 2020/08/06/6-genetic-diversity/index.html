@@ -28,7 +28,7 @@
 <meta property="og:description" content="Genetic diversityPrefaceGenetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-06T03:35:13.000Z">
-<meta property="article:modified_time" content="2020-08-17T17:10:19.686Z">
+<meta property="article:modified_time" content="2020-08-17T17:18:13.034Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="population genetics">
 <meta property="article:tag" content="diversity">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-18 01:10:19" itemprop="dateModified" datetime="2020-08-18T01:10:19+08:00">2020-08-18</time>
+                <time title="Modified: 2020-08-18 01:18:13" itemprop="dateModified" datetime="2020-08-18T01:18:13+08:00">2020-08-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -340,8 +340,15 @@
 <p>Then we have the normalized K ($\theta_K$), </p>
 <p>$\theta_K=\frac{K}{a_1}$, in which $a_1=\sum_{2}^{n}{\frac{1}{n-1}}$ and $n$ denotes the number of sequences. </p>
 <h2 id="Tajima’s-D"><a href="#Tajima’s-D" class="headerlink" title="Tajima’s D"></a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tajima%27s_D">Tajima’s D</a></h2><p>Tajima’s D is a famous population genetic test statistic, computed as the difference between $\theta_{\pi}$ and $\theta_K$. It is an important indicator of natural selection. Both $\theta_{\pi}$ and $\theta_K$ are un-biased estimators of $\theta$ for mutations under the neutral conditions, and $\theta_{\pi} = \theta_K$. However, they would be different under natural selection. </p>
-<p>If <code>selective sweep</code> (or linkage to a swept gene) (<em>common variants are swept</em>) OR <code>population expansion</code> after a recent cottleneck (<em>a lot of new individuals</em>) occur, there would be excess of rare alleles. In this scenario, $\theta_{\pi} &lt; \theta_K$. We may further distinguish <code>selective sweep</code> and <code>population expansion</code> based on the haplotype homozygosity and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Linkage_disequilibrium">linkage disequilibrium</a>. Other ways to detect seletive sweeps include iHS, XP-EHH, and so on. </p>
-<p>If <code>balancing selection</code> OR sudden <code>population contraction</code> occurs, we would have $\theta_{\pi} &gt; \theta_K$. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Balancing_selection">Balancing selection</a> refers to a number of selective processes by which multiple alleles are actively maintained in the gene pool of a population at frequencies larger than expected from genetic drift alone. The most famous case of balancing selection is about the malaria and sickle cell trait. Sickle cell anemia is caused by the inheritance of an HgbS allele from parents (<em>HgbS homozygotes die</em>), while normal people have homozygous HgbA alleles. Individuals carrying the HgbS allele (<em>heterozygote</em>) have damaged red blood cells and might have shorter life expectancy, but they are resistant to the malarial parasite. It’s a trade off (<em>especially in Africa</em>). </p>
+<p>If <code>selective sweep</code> (or linkage to a swept gene) (<em>common variants are swept</em>) OR <code>population expansion</code> after a recent cottleneck (<em>a lot of new individuals</em>) occur, there would be excess of rare alleles. In this scenario, $\theta_{\pi} &lt; \theta_K$. We may further distinguish <code>selective sweep</code> and <code>population expansion</code> based on the haplotype homozygosity and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Linkage_disequilibrium">linkage disequilibrium</a>. Other ways to detect seletive sweeps include iHS, XP-EHH, and so on (see the following refs).</p>
+<blockquote>
+<p>Voight, B.F., Kudaravalli, S., Wen, X. and Pritchard, J.K., 2006. A map of recent positive selection in the human genome. PLoS Biol, 4(3), p.e72.  </p>
+<p>Sabeti, P.C., Varilly, P., Fry, B., Lohmueller, J., Hostetter, E., Cotsapas, C., Xie, X., Byrne, E.H., McCarroll, S.A., Gaudet, R. and Schaffner, S.F., 2007. Genome-wide detection and characterization of positive selection in human populations. Nature, 449(7164), pp.913-918.</p>
+</blockquote>
+<p>If <code>balancing selection</code> OR sudden <code>population contraction</code> occurs, we would have $\theta_{\pi} &gt; \theta_K$. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Balancing_selection">Balancing selection</a> refers to a number of selective processes by which multiple alleles are actively maintained in the gene pool of a population at frequencies larger than expected from genetic drift alone. The most famous case of balancing selection is about the malaria and sickle cell trait. Sickle cell anemia is caused by the inheritance of an HgbS allele from parents (<em>HgbS homozygotes die</em>), while normal people have homozygous HgbA alleles. Individuals carrying the HgbS allele (<em>heterozygote</em>) have damaged red blood cells and might have shorter life expectancy, but they are resistant to the malarial parasite. It’s a trade off (<em>especially in Africa</em>). Methods to detect balancing selection include <a target="_blank" rel="noopener" href="https://github.com/ksiewert/BetaScan">BetaScan</a>. </p>
+<blockquote>
+<p>Siewert, K.M. and Voight, B.F., 2020. BetaScan2: Standardized statistics to detect balancing selection utilizing substitution data. Genome biology and evolution, 12(2), pp.3873-3877.</p>
+</blockquote>
 <p>Here we define $D=\frac{\theta_{\pi}-\theta_K}{sd(\theta_{\pi}-\theta_K)}$ to estimate the differnce between $\theta_{\pi}$ and $\theta_K$, $sd$ stands for standard deviation. See the following references for more details about how to calculate Tajima’s D statistic as well the significance. </p>
 <blockquote>
 <p>Tajima, F. (Nov 1989). Statistical method for testing the neutral mutation hypothesis by DNA polymorphism. Genetics. 123 (3): 585–95.</p>
