@@ -28,7 +28,7 @@
 <meta property="og:description" content="Genetic diversityPrefaceGenetic diveristy describes the genetic differences among individuals within the same population. The higher genetic diveristy may imply the larger gene pool, and also indicate">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-06T03:35:13.000Z">
-<meta property="article:modified_time" content="2020-08-17T17:21:17.707Z">
+<meta property="article:modified_time" content="2020-08-21T15:54:55.356Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="population genetics">
 <meta property="article:tag" content="diversity">
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-18 01:21:17" itemprop="dateModified" datetime="2020-08-18T01:21:17+08:00">2020-08-18</time>
+                <time title="Modified: 2020-08-21 23:54:55" itemprop="dateModified" datetime="2020-08-21T23:54:55+08:00">2020-08-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -293,8 +293,11 @@
 <blockquote>
 <p>We can further calcluate the F statistic based on heterozygosity.  </p>
 </blockquote>
-<h2 id="Effective-population-size"><a href="#Effective-population-size" class="headerlink" title="Effective population size"></a>Effective population size</h2><p>To be finished…</p>
-<p>We are going to discuss about the <code>F statistic</code>.</p>
+<h2 id="Effective-population-size-N-e"><a href="#Effective-population-size-N-e" class="headerlink" title="Effective population size ($N_e$)"></a>Effective population size ($N_e$)</h2><p>The effective population size ($N_e$) is the number of individuals that an idealised population would need to have in order for some specified quantity of interest to be the same in the idealised population as in the real population under the <code>Wright-Fisher Model</code>. </p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Effective_population_size">https://en.wikipedia.org/wiki/Effective_population_size</a></p>
+</blockquote>
+<p>See </p>
 <h2 id="Population-mutation-rate-theta"><a href="#Population-mutation-rate-theta" class="headerlink" title="Population mutation rate ($\theta$)"></a>Population mutation rate ($\theta$)</h2><p>In population genetics, population mutation rate ($\theta$) describe the genetic diversity in a population.  </p>
 <ul>
 <li>$\theta=4N_e\mu$ for autosome</li>
@@ -353,7 +356,12 @@
 <blockquote>
 <p>Tajima, F. (Nov 1989). Statistical method for testing the neutral mutation hypothesis by DNA polymorphism. Genetics. 123 (3): 585–95.</p>
 </blockquote>
-<h2 id="Haplotype-diversity"><a href="#Haplotype-diversity" class="headerlink" title="Haplotype diversity"></a>Haplotype diversity</h2><p>to be finished…</p>
+<h2 id="Haplotype-diversity-H"><a href="#Haplotype-diversity-H" class="headerlink" title="Haplotype diversity ($H$)"></a>Haplotype diversity ($H$)</h2><p>This measure of gene diversity is analogous to the heterozygosity at a single locus</p>
+<blockquote>
+<p>Nei, M., and Tajima, F. (1981). DNA POLYMORPHISM DETECTABLE BY RESTRICTION ENDONUCLEASES. Genetics 97, 145-163</p>
+</blockquote>
+<p>$H=\frac{N*(1-\sum{x^2})}{N-1}$</p>
+<p>where $x$ is the frequency of each haplotype, $N$ is the sample size (number of sequences). </p>
 <h2 id="Time-to-Most-Recent-Common-Ancestor-TMRCA"><a href="#Time-to-Most-Recent-Common-Ancestor-TMRCA" class="headerlink" title="Time to Most Recent Common Ancestor (TMRCA)"></a><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Most_recent_common_ancestor">Time to Most Recent Common Ancestor (TMRCA)</a></h2><p>It’s a long story, starting from the very begining. God created the world as well ancestors of humans, Adam and Eve. Then, Adam and Eve created human beings.  </p>
 <p>OK, let’s talk about science. A lot of work have been done to build and improve the human Y chromosome and mitochondrial phylogenetic tree. Since mitochondrial DNA (mtDNA) and Y chromosome are respectively inherited maternally and paternally, while recombination is rare or absent, it seems relatively easy to track the ancestry of the lineages back to a Most Recent Common Ancestor (MRCA). And scientists have helped to trace our lineages back to single person living in Africa, named <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mitochondrial_Eve">Mitochondrial Eve</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Y-chromosomal_Adam">Y-chromosomal Adam</a>. The principal is the coalescence of mutations on every pairs of sequences. Meanwhile, we are also able to calculate TMRCA by estimating the expected time to have all of the observed mutations occured on Y chromosome / mtDNA. </p>
 <p>For autosome, there is also a simple way to estimate TMCRA. First, chose a short segment on the genome to avoid potential recombination. Then calculate the average pairwise differences among sequences (in the same way as $\pi$).  </p>
@@ -381,6 +389,8 @@
 <blockquote>
 <p>Albers, Patrick K., and Gil McVean. “Dating genomic variants and shared ancestry in population-scale sequencing data.” PLoS biology (2020)</p>
 </blockquote>
+<hr>
+<p>The end. </p>
 
     </div>
 
@@ -440,7 +450,10 @@
     <a href="/2020/08/05/5-something-about-FDR/" rel="prev" title="5. something about FDR">
       <i class="fa fa-chevron-left"></i> 5. something about FDR
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/21/7-effective-population-size/" rel="next" title="7. effective population size">
+      7. effective population size <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -499,7 +512,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNA-polymorphism"><span class="nav-number">1.2.</span> <span class="nav-text">DNA polymorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.3.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Effective-population-size"><span class="nav-number">1.4.</span> <span class="nav-text">Effective population size</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Population-mutation-rate-theta"><span class="nav-number">1.5.</span> <span class="nav-text">Population mutation rate ($\theta$)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nucleotide-diversity-theta-pi"><span class="nav-number">1.5.1.</span> <span class="nav-text">Nucleotide diversity ($\theta_\pi$)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Number-of-segregating-site-theta-K"><span class="nav-number">1.5.2.</span> <span class="nav-text">Number of segregating site ($\theta_K$)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tajima%E2%80%99s-D"><span class="nav-number">1.6.</span> <span class="nav-text">Tajima’s D</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Haplotype-diversity"><span class="nav-number">1.7.</span> <span class="nav-text">Haplotype diversity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Time-to-Most-Recent-Common-Ancestor-TMRCA"><span class="nav-number">1.8.</span> <span class="nav-text">Time to Most Recent Common Ancestor (TMRCA)</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Genetic-diversity"><span class="nav-number">1.</span> <span class="nav-text">Genetic diversity</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNA-polymorphism"><span class="nav-number">1.2.</span> <span class="nav-text">DNA polymorphism</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Heterozygosity"><span class="nav-number">1.3.</span> <span class="nav-text">Heterozygosity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Effective-population-size-N-e"><span class="nav-number">1.4.</span> <span class="nav-text">Effective population size ($N_e$)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Population-mutation-rate-theta"><span class="nav-number">1.5.</span> <span class="nav-text">Population mutation rate ($\theta$)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nucleotide-diversity-theta-pi"><span class="nav-number">1.5.1.</span> <span class="nav-text">Nucleotide diversity ($\theta_\pi$)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Number-of-segregating-site-theta-K"><span class="nav-number">1.5.2.</span> <span class="nav-text">Number of segregating site ($\theta_K$)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tajima%E2%80%99s-D"><span class="nav-number">1.6.</span> <span class="nav-text">Tajima’s D</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Haplotype-diversity-H"><span class="nav-number">1.7.</span> <span class="nav-text">Haplotype diversity ($H$)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Time-to-Most-Recent-Common-Ancestor-TMRCA"><span class="nav-number">1.8.</span> <span class="nav-text">Time to Most Recent Common Ancestor (TMRCA)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -515,7 +528,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
