@@ -27,14 +27,14 @@
 <meta property="og:site_name" content="yuwen pan&#39;s blog">
 <meta property="og:description" content="Effective population size ($N_e$)PrefaceThe effective population size ($N_e$) is the number of individuals in a theoretically ideal population having the same magnitude of some specified quantity of i">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/panyuwen/figs/blob/master/fixation_index.png">
+<meta property="og:image" content="https://github.com/panyuwen/figs/blob/master/fixation_index.png?raw=true">
 <meta property="article:published_time" content="2020-08-21T15:53:38.000Z">
-<meta property="article:modified_time" content="2020-08-22T15:49:22.618Z">
+<meta property="article:modified_time" content="2020-08-22T16:17:31.964Z">
 <meta property="article:author" content="yuwen pan">
 <meta property="article:tag" content="population genetics">
 <meta property="article:tag" content="diversity">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/panyuwen/figs/blob/master/fixation_index.png">
+<meta name="twitter:image" content="https://github.com/panyuwen/figs/blob/master/fixation_index.png?raw=true">
 
 <link rel="canonical" href="https://panyuwen.github.io/2020/08/21/7-effective-population-size/">
 
@@ -216,7 +216,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-22 23:49:22" itemprop="dateModified" datetime="2020-08-22T23:49:22+08:00">2020-08-22</time>
+                <time title="Modified: 2020-08-23 00:17:31" itemprop="dateModified" datetime="2020-08-23T00:17:31+08:00">2020-08-23</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,28 +256,31 @@
 <h2 id="Fixation-index"><a href="#Fixation-index" class="headerlink" title="Fixation index"></a>Fixation index</h2><p>Two alleles are identical by descent (IBD) (due to finite population size) if they are replicas of a gene present in sample previous generation (choose come arbitrary time in the past). The concept of IBD allows us to distinguish two types of homozygous genotypes (e.g., IBD AA and not IBD AA). In some cases, alleles may be indistinguishable (their status in regard to identity by descent is unknown), such alleles are identical by state (IBS).   </p>
 <p>The probability that the alleles in an individual are <code>IBD</code> is often denoted $F$ (Fixation index). The probability of allele IBD in generation $t$ is represented as $F_t$.  </p>
 <p>When the population subdivision first take place, and all subpopulations have the same allele frequencies ($t=0, F_t=0$). As time goes on, each subpopulation undergoes random drift, the genotype frequencies in each subpopulation will statisfy the Hardy-Weinberg principle. However, the allele frequencies among the subpopulations will change because of random genetic drift, and moreover the value of $F_t$ will gradually increase as more and more alleles within any subpopulations become IBD owing to common ancestry.  </p>
-<p><img src="https://github.com/panyuwen/figs/blob/master/fixation_index.png"></p>
-<p>There are $2N$ alleles in a breeding population of generation $t-1$. In sampling alleles for generation t, the first allele chosen may be any of those present in generation $t-1$ with equal probability. Then the probability that the second allele chosen in of the same type as the first is $\frac{1}{2N}$ (in which case $F=1$), which is the frequency of each allelic type in the pool of gamates. And the propability that the second chosen allele is of a different type is accordingly $1-\frac{1}{2N}$ (in which case $F=F_{t-1}$). We get $F_t=\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1}$ (the probability of either being autologous in the present generation OR the probability that an individual comes from that fraction of the population that is already autozygous due to inbreeding in the previous generation).   </p>
+<p><img src="https://github.com/panyuwen/figs/blob/master/fixation_index.png?raw=true"></p>
+<p>There are $2N$ alleles in a breeding population of generation $t-1$. In sampling alleles for generation t, the first allele chosen may be any of those present in generation $t-1$ with equal probability. Then the probability that the second allele chosen in of the same type as the first is $\frac{1}{2N}$ (in which case $F=1$), which is the frequency of each allelic type in the pool of gamates. And the propability that the second chosen allele is of a different type is accordingly $1-\frac{1}{2N}$ (in which case $F=F_{t-1}$). We get </p>
+<p>$F_t=\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1}$, </p>
+<p>which can be regarded as the probability of either being autologous in the present generation <code>OR</code> the probability that an individual comes from that fraction of the population that is already autozygous due to inbreeding in the previous generation.   </p>
 <p>Multiplying both sides by $-1$ and then adding $1$ to each side leads to </p>
 <p>$1-F_t=1-\frac{1}{2N}-(1-\frac{1}{2N})F_{t-1}=(1-\frac{1}{2N})(1-F_{t-1})$</p>
 <p>$1-F_t=(1-\frac{1}{2N})^t(1-F_0)$</p>
-<p>when $F_0=0$, $1-F_t=(1-\frac{1}{2N})^t$.  </p>
-<p>Since $F_t$ is the probability that 2 alleles in an individual in generation $t$ are IBD and assuming $p_0$ is the overall allele frequency if $A$ averaged across all subpopulations, the propability that a randomly chosen individual will be genotypically $AA$ is </p>
-<p>$p_0^2(1-F_t)$ [$P(A)*P(A_{non-IBD})$]$+p_0F_t$ [$P(A)*P(IBD)$], which equals $p_0^2(1-F_t)+p_0F_t$. Similarly, the average genotype frequencies among subpopulations at any time $t$ have the expected values: </p>
+<p>$1-F_t=(1-\frac{1}{2N})^t$, when $F_0=0$. </p>
+<p>Since $F_t$ is the probability that 2 alleles in an individual in generation $t$ are IBD, and assuming $p_0$ is the overall allele frequency if $A$ averaged across all subpopulations, the propability that a randomly chosen individual will be genotypically $AA$ is </p>
+<p>$p_0^2(1-F_t)$ [$P(A)*P(A_{non-IBD})$]$+p_0F_t$ [$P(A)*P(IBD)$] $ = p_0^2(1-F_t)+p_0F_t$ . </p>
+<p>Similarly, the average genotype frequencies among subpopulations at any time $t$ have the expected values: </p>
 <p>$AA: p_0^2(1-F_t)+p_0F_t = p_0^2+p_0q_0F_t$</p>
 <p>$Aa: 2p_0q_0(1-F_t) = 2p_0q_0-2p_0q_0F_t$</p>
-<p>$aa: q_0^2(1-F_t)+q_0F_t = q_0^2+p_0q_0F_t$</p>
+<p>$aa: q_0^2(1-F_t)+q_0F_t = q_0^2+p_0q_0F_t$ .</p>
 <p>At any time, the average frequency of heterozygous genotypes among the subpopulations, $H_t$, relative to what it would be without population subdivision, $H_0$, decreases linearly in $F_t$. Hence we have $H_t=(1-F_t)H_0$, where $H_0=2p_0q_0$. We obtain $H_t=(1-\frac{1}{2N})^tH_0 \approx H_0e^{\frac{-t}{2N}}$. That is, in each successive generation, the heterozygosity ($H$) declines by $\frac{1}{2N}$. And the smaller the population size ($N$), the faster the decline in heterozygosity.   </p>
 <p>Finally, $F_t=1$ and there are no heterozygotes left ($H=0$), and all subpopulations are fixed. The allele that is already more frequent will have a higher probability of being fixed. And the probability of a neutral allele being fixed equals to its frequency. </p>
-<h2 id="The-mutation-drift-balance"><a href="#The-mutation-drift-balance" class="headerlink" title="The mutation-drift balance"></a>The mutation-drift balance</h2><p>Each generation, $2N\mu$ new mutations added, which thus arise at an initial frequency of $\frac{1}{2N}$. For each of these, $\frac{1}{2N}$ probability of eventually going to fixation (by chance along, if it is neutral to selection), since the probability that an allele will be fixed is equal to its frequency. Thus, the total number of mutations that will be fixed per generation is: $2N\mu* \frac{1}{2N}=\mu$ (the probability of getting a new mutant in the population and then the probability that this mutant will be fixed), while the rate (time interval) at which new neutral mutants are fixed is $\frac{1}{\mu}$, independent of population size $N$. However, the time it takes a particular mutant to achieve fixation from the time it arises is dependent on populaiton size ($4N_e$ generations).   </p>
+<h2 id="The-mutation-drift-balance"><a href="#The-mutation-drift-balance" class="headerlink" title="The mutation-drift balance"></a>The mutation-drift balance</h2><p>Each generation, $2N\mu$ new mutations added, which thus arise at an initial frequency of $\frac{1}{2N}$. For each of these, $\frac{1}{2N}$ probability of eventually going to fixation (by chance along, if it is neutral to selection), since the probability that an allele will be fixed is equal to its frequency. Thus, the total number of mutations that will be fixed per generation is $2N\mu* \frac{1}{2N}=\mu$ (the probability of getting a new mutant in the population and then the probability that this mutant will be fixed), while the rate (time interval) at which new neutral mutants are fixed is $\frac{1}{\mu}$, independent of population size $N$. However, the time it takes a particular mutant to achieve fixation from the time it arises is dependent on populaiton size ($4N_e$ generations).   </p>
 <p>In the absence of mutation, the probability of being autozygous is </p>
-<p>$F_t=\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1}$</p>
+<p>$F_t=\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1}$ .  </p>
 <p>But either of the 2 autozygous alleles could mutate, so the probability that both will not mutate is $(1-\mu)^2$.  Hence,  we have</p>
-<p>$F_t=(\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1})*(1-\mu)^2$</p>
+<p>$F_t=(\frac{1}{2N}+(1-\frac{1}{2N})F_{t-1})*(1-\mu)^2$ .  </p>
 <p>At equilibrium, $F_t=F_{t-1}$, this reduces to </p>
-<p>$F_{eq}=\frac{(\frac{1}{2N})(1-\mu)^2}{1-(1-\frac{1}{2N})(1-\mu)^2} \approx \frac{1-2\mu}{2N(1-(1-\frac{1}{2N})(1-2\mu))}=\frac{1-2\mu}{1+4N\mu-2\mu} \approx \frac{1}{4N\mu+1}$</p>
+<p>$F_{eq}=\frac{(\frac{1}{2N})(1-\mu)^2}{1-(1-\frac{1}{2N})(1-\mu)^2} \approx \frac{1-2\mu}{2N(1-(1-\frac{1}{2N})(1-2\mu))}=\frac{1-2\mu}{1+4N\mu-2\mu} \approx \frac{1}{4N\mu+1}$ .  </p>
 <p>Because $H=1-F_{eq}$ (heterozygosity, probability of non-IBD), then $H=\frac{4N\mu}{4N\mu+1}$. It implies that $H$ decreases as $\mu$ or $N$ decrease. Also, drift causes allele frequencies to fluctuate randomly, and these fluctuations occur more rapidly and drastically in smaller populations. If a population becomes separated into 2 populations, the variance between the populations increases due to drift.  </p>
-<p>The key number is $4N\mu$ vs. 1​. When $4N\mu &lt; 1$, the stationary distribution of alleles bowl-shaped (fixed as either extreme); when $4N\mu &gt; 1$, the stationary distribution of alleles clumped in middle (variance maintained).   </p>
+<p>The key number is $4N\mu$ vs. $1$. When $4N\mu &lt; 1$, the stationary distribution of alleles bowl-shaped (fixed as either extreme); when $4N\mu &gt; 1$, the stationary distribution of alleles clumped in middle (variance maintained).   </p>
 <p>Further, $H=\frac{4N\mu}{4N\mu+1}=\frac{\theta}{1+\theta}$, and $4N\mu=\theta$ becomes the basic level of variation, in which $\theta$ is population mutation rate. </p>
 <blockquote>
 <p>Why does $\theta=4N\mu$ ?</p>
@@ -287,23 +290,34 @@
 <p>For X chromosome, $\theta=3N\mu$ (diploid in females, haploid in males) </p>
 <p>For Y and mtDNA, $\theta=N\mu$ (haploid, inherited uniparentally)  </p>
 </blockquote>
+<blockquote>
 <p>Besides, gene flow is another way to introduce new alleles into the population. Replace $\mu$ with $m$ (where $m$ is the probability that a migrant contributes to the next generation, and $m$ is small), we have $F_{eq}=\frac{1}{1+4Nm}$.   </p>
+</blockquote>
 <h2 id="Estimates-of-effective-population-size-N-e"><a href="#Estimates-of-effective-population-size-N-e" class="headerlink" title="Estimates of effective population size ($N_e$)"></a>Estimates of effective population size ($N_e$)</h2><h3 id="Variations-in-population-size"><a href="#Variations-in-population-size" class="headerlink" title="Variations in population size"></a>Variations in population size</h3><p>Suppose that the population size in 2 successive generations are $N_0$ and $N_1$. </p>
 <p>$F_2 = \frac{1}{2N_1}+(1-\frac{1}{2N_1})F_1$ ==&gt; $1-F_2 = (1-\frac{1}{2N_1})*(1-F_1)$</p>
 <p>$1-F_1 = (1-\frac{1}{2N_0})*(1-F_0)$</p>
-<p>==&gt; $1-F_2=(1-\frac{1}{2N_1})<em>(1-\frac{1}{2N_0})</em>(1-F_0)$</p>
-<p>==&gt; $1-F_t=(1-\frac{1}{2N_{t-1}})<em>\dots</em>(1-\frac{1}{2N_1})<em>(1-\frac{1}{2N_0})</em>(1-F_0)$, by analogy with the constant $N$ case (where $N$ is now the effective population size, symbolized as $N_e$), it is appropriate to try to express this equation in the general form </p>
-<p>==&gt; $1-F_t = (1-\frac{1}{2N_e})^t*(1-F_0)$</p>
+<p>These lead to</p>
+<p>$1-F_2=(1-\frac{1}{2N_1})<em>(1-\frac{1}{2N_0})</em>(1-F_0)$</p>
+<p>$1-F_t=(1-\frac{1}{2N_{t-1}})<em>\dots</em>(1-\frac{1}{2N_1})<em>(1-\frac{1}{2N_0})</em>(1-F_0)$, </p>
+<p>by analogy with the constant $N$ case (where $N$ is now the effective population size, symbolized as $N_e$), it is appropriate to try to express this equation in the general form </p>
+<p>$1-F_t = (1-\frac{1}{2N_e})^t*(1-F_0)$</p>
 <p>setting the 2 expressions for $1-F_t$ equal to each other, we obtain</p>
 <p>$(1-\frac{1}{2N_e})^t=(1-\frac{1}{2N_{t-1}})<em>\dots</em>(1-\frac{1}{2N_1})*(1-\frac{1}{2N_0})$</p>
-<p>==&gt; $\frac{1}{N_e} \approx \frac{1}{t}*(\frac{1}{N_0}+\frac{1}{N_1}+\dots+\frac{1}{N_{t-1}})$</p>
+<p>$\frac{1}{N_e} \approx \frac{1}{t}*(\frac{1}{N_0}+\frac{1}{N_1}+\dots+\frac{1}{N_{t-1}})$</p>
 <p>so the effective population size $N_e$ is the harmonic mean of the actual numbers. A single period of small population size (bottleneck) can result in a serious loss in heterozygosity. </p>
-<h3 id="Variance-effective-population-size"><a href="#Variance-effective-population-size" class="headerlink" title="Variance effective population size"></a>Variance effective population size</h3><p>The variance effective population size $N_e^{(v)}$ is defined as the size of an idealized population with an given variance. effective population size adjusted for variance. Let $D(p)$ be the variance calculated for the actual population, $D(p)=\frac{p(1-p)}{2N}$. Then substitute $\hat D(p)$ for $D(p)$ and solve for $N$ which gives $N_e^{(v)}=\frac{p(1-p)}{2\hat D(p)}$. </p>
+<h3 id="Variance-effective-population-size"><a href="#Variance-effective-population-size" class="headerlink" title="Variance effective population size"></a>Variance effective population size</h3><p>The variance effective population size $N_e^{(v)}$ is defined as the size of an idealized population with an given variance. Let $D(p)$ be the variance calculated for the actual population, $D(p)=\frac{p(1-p)}{2N}$. Then substitute $\hat D(p)$ for $D(p)$ and solve for $N$ which gives $N_e^{(v)}=\frac{p(1-p)}{2\hat D(p)}$. </p>
 <p>See the <code>Unequal sex ratio</code> section for example. </p>
 <h3 id="Inbreeding-effective-population-size"><a href="#Inbreeding-effective-population-size" class="headerlink" title="Inbreeding effective population size"></a>Inbreeding effective population size</h3><p>We define the inbreedinf effective population size $N_e^{(f)}$ as the size of the idealized population that has the same change in average inbreeding coefficient as the population under consideration. </p>
-<p>We have the inbreeding coefficient ($F$), $1-F_{t+1} = (1-\frac{1}{2N})*(1-F_t)$. Then the inbreeding effective size can be solved, $N_e^{(f)}=\frac{1}{2(1-\frac{1-F_{t+1}}{1-F_t})}$ .   </p>
-<h3 id="Coalescence-effective-population-size"><a href="#Coalescence-effective-population-size" class="headerlink" title="Coalescence effective population size"></a>Coalescence effective population size</h3><p>In a population with a constant effective population size with $2N_e$ copies of each locus, the propabbility that two alleles originate from the same parental copy (IBD) is $\frac{1}{2N_e}$. At each successive preceding generation, the probability of coalescence is the probability of non-coalescence at the $t-1$ preceding generations multiplied by the probability of coalescence at the generation of interest, $P_c(t)=(1-\frac{1}{2N_e})^{t-1}(\frac{1}{2N_e})$, which is geometrically distributed.  </p>
-<p>For sufficiently large values of $N_e$, $P_e(t) \approx \frac{1}{2N_e}e^{-\frac{t-1}{2N_e}}$. Under the exponential distribution, both the expected value and the standard deviation equal to $2N_e$, which means that the expected time to coalescence is $2N_e$. </p>
+<p>We have the inbreeding coefficient ($F$), </p>
+<p>$1-F_{t+1} = (1-\frac{1}{2N})*(1-F_t)$ . </p>
+<p>Then the inbreeding effective size can be solved, </p>
+<p>$N_e^{(f)}=\frac{1}{2(1-\frac{1-F_{t+1}}{1-F_t})}$ .   </p>
+<h3 id="Coalescence-effective-population-size"><a href="#Coalescence-effective-population-size" class="headerlink" title="Coalescence effective population size"></a>Coalescence effective population size</h3><p>In a population with a constant effective population size with $2N_e$ copies of each locus, the propabbility that two alleles originate from the same parental copy (IBD) is $\frac{1}{2N_e}$. At each successive preceding generation, the probability of coalescence is the probability of non-coalescence at the $t-1$ preceding generations multiplied by the probability of coalescence at the generation of interest, </p>
+<p>$P_c(t)=(1-\frac{1}{2N_e})^{t-1}(\frac{1}{2N_e})$, </p>
+<p>which is geometrically distributed.  </p>
+<p>For sufficiently large values of $N_e$, </p>
+<p>$P_e(t) \approx \frac{1}{2N_e}e^{-\frac{t-1}{2N_e}}$. </p>
+<p>Under the exponential distribution, both the expected value and the standard deviation equal to $2N_e$, which means that the expected time to coalescence is $2N_e$. </p>
 <h3 id="Unequal-sex-ratio"><a href="#Unequal-sex-ratio" class="headerlink" title="Unequal sex ratio"></a>Unequal sex ratio</h3><p>If a sexual population consists of $N_m$ males and $N_f$ females, the actual size is $N_a=N_m+N_f$, but the effective population size for autosome- and X-linked gene is $N_e^A=\frac{4N_mN_f}{N_m+N_f}$ and $N_e^X=\frac{9N_mN_f}{4N_m+2N_f}$, respectively.  </p>
 <p>Note that the sampling variance for the X chromosomes from males is $\frac{p_mq_m}{N_m}$, whereasthe sampling variance for X chromosomes from female is $\frac{p_fq_f}{2N_f}$, in which $p_m$ and $p_f$ are allele frequencies respectively in males and females. </p>
 <blockquote>
@@ -315,7 +329,9 @@
 <blockquote>
 <p>Because $p_m$ and $p_f$ are independent random variables, $D(p)=\frac{1}{9}D(p_m)+\frac{4}{9}D(p_f)$.  </p>
 </blockquote>
-<p>As steady state, $p_m=p_f=p$ and $q_m=q_f=q$. Then $D(p)=pq(\frac{1}{9}\frac{1}{N_m}+\frac{4}{9}\frac{1}{2N_f})=\frac{pq}{2(\frac{9N_mN_f}{4N_m+2N_f})}=\frac{pq}{2N_e}$. It’s a variance effective size, and the binomal sampling variance in an ideal population is $\frac{pq}{2N_e}$.  </p>
+<p>As steady state, $p_m=p_f=p$ and $q_m=q_f=q$. </p>
+<p>$D(p)=pq(\frac{1}{9}\frac{1}{N_m}+\frac{4}{9}\frac{1}{2N_f})=\frac{pq}{2(\frac{9N_mN_f}{4N_m+2N_f})}=\frac{pq}{2N_e}$. </p>
+<p>It’s a variance effective size, and the binomal sampling variance in an ideal population is $\frac{pq}{2N_e}$.  </p>
 <hr>
 <p>The end. </p>
 
