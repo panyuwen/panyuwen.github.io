@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"panyuwen.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="to be finished……">
+  <meta name="description" content="Plot the figurePrefaceR packages, codes, and my aesthetic.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="4. plot the figure">
 <meta property="og:url" content="https://panyuwen.github.io/2020/08/05/4-plot-the-figure/index.html">
 <meta property="og:site_name" content="KNOCKIN on HEAVEN&#39;s DOOR">
-<meta property="og:description" content="to be finished……">
+<meta property="og:description" content="Plot the figurePrefaceR packages, codes, and my aesthetic.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-05T13:13:24.000Z">
-<meta property="article:modified_time" content="2020-08-30T05:12:46.074Z">
+<meta property="article:modified_time" content="2020-08-30T07:20:54.441Z">
 <meta property="article:author" content="KNOCK KNOCK KNOCKIN">
 <meta property="article:tag" content="ggplot2">
 <meta name="twitter:card" content="summary">
@@ -211,7 +211,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-30 13:12:46" itemprop="dateModified" datetime="2020-08-30T13:12:46+08:00">2020-08-30</time>
+                <time title="Modified: 2020-08-30 15:20:54" itemprop="dateModified" datetime="2020-08-30T15:20:54+08:00">2020-08-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -241,7 +241,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>to be finished……</p>
+        <h1 id="Plot-the-figure"><a href="#Plot-the-figure" class="headerlink" title="Plot the figure"></a>Plot the figure</h1><h2 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a>Preface</h2><p>R packages, codes, and my aesthetic. </p>
+<a id="more"></a>
+
+<h2 id="Chromosome-gene-plot"><a href="#Chromosome-gene-plot" class="headerlink" title="Chromosome/gene plot"></a>Chromosome/gene plot</h2><p>R packages/software: (in random order)</p>
+<ul>
+<li>RIdeogram</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/wilkox/gggenes"><strong>gggenes</strong></a>  <ul>
+<li>R package (gg style) </li>
+<li>for local genes </li>
+<li>looks pretty </li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://www.bioconductor.org/packages/release/bioc/html/ggbio.html#:~:text=The%20ggbio%20package%20extends%20and,of%20high%20throughput%20genomics%20data.&text=The%20package%20supports%20detailed%20views,well%20as%20genome%2Dwide%20overviews."><strong>ggbio</strong></a> <ul>
+<li>R package (gg style)</li>
+<li>for local genes </li>
+<li>simple, but not bad</li>
+<li>version hg19</li>
+<li>really takes time to install </li>
+<li>lots of packages are required, (my way to use ggbio) <ul>
+<li>library(ggbio)</li>
+<li>library(gridExtra)</li>
+<li>library(gridBase)</li>
+<li>library(reshape2)</li>
+<li>library(Homo.sapiens)</li>
+<li>library(EnsDb.Hsapiens.v75)</li>
+<li>library(BSgenome.Hsapiens.UCSC.hg19)</li>
+<li>library(TxDb.Hsapiens.UCSC.hg19.knownGene)</li>
+<li>data(genesymbol, package = “biovizBase”)</li>
+<li>library(ggpubr)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="http://www.sthda.com/english/wiki/gviz-visualize-genomic-data">Gviz</a> </li>
+<li><a target="_blank" rel="noopener" href="http://visualization.ritchielab.org/phenograms/document">PhenoGram</a> <ul>
+<li>Ruby language</li>
+<li>whole genome</li>
+<li>GWAS catalog style</li>
+<li>don’t support PDF (pity)</li>
+<li>should manually modify the “pheno_gram.rb” script to  change colors <ul>
+<li>line ~650, “class ExhaustiveSearchColorMaker” </li>
+</ul>
+</li>
+<li>also provide web server</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="http://www.bioconductor.org/packages/release/bioc/html/chromPlot.html">ChromPlot</a> <ul>
+<li>R package</li>
+<li>whole genome</li>
+<li>a lot of functions</li>
+<li>don’t know how to change the font size (too small) </li>
+<li>looks ugly </li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/jordanlab/tagore"><strong>Tagore</strong></a> <ul>
+<li>Python module (python 3+)  </li>
+<li>whole genome</li>
+<li>easy to use</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Refs:</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e924e33c60c9">https://www.jianshu.com/p/e924e33c60c9</a></p>
+</blockquote>
+<hr>
+<p>Updating…</p>
 
     </div>
 
@@ -362,6 +428,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Plot-the-figure"><span class="nav-number">1.</span> <span class="nav-text">Plot the figure</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Preface"><span class="nav-number">1.1.</span> <span class="nav-text">Preface</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chromosome-gene-plot"><span class="nav-number">1.2.</span> <span class="nav-text">Chromosome&#x2F;gene plot</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
